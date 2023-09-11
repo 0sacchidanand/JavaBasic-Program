@@ -1,0 +1,23 @@
+public class CountP19 {
+    public static void main(String[] args) {
+        int n = 5;
+        int count = (n * (n + 1)) / 2;
+        for (int i = 1; i <= n; i++) {
+            int c = count;
+            for (int j = i; j <= n; j++) {
+                System.out.print(c + "\t");
+                c = c - j - 1; // c -= j - 1;
+            }
+            System.out.println();
+            count -= i;
+        }
+    }
+
+}
+/*
+ * 15 13 10 6 1
+ * 14 11 7 2
+ * 12 8 3
+ * 9 4
+ * 5
+ */
