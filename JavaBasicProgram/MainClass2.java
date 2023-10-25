@@ -1,10 +1,7 @@
-class MainClass2
-{
-	public static void main(String args[])
-	{
-		Demo2 d1 = new Demo2();
-		d1.a=10;
-		d1.b=30;
-		d1.add();
-	}
+public class MainClass2 {
+    public static void main(String[] args) {
+        ArrayMethodAvg aa = new ArrayMethodAvg();
+        int a[] = { 10, 20, 30, 40, 50 };
+        System.out.println(aa.avgOfArray(a));
+    }
 }
